@@ -1,0 +1,182 @@
+:root {
+  /* colors for the gradients on the navbar buttons can be edited here!
+  gradient progresses left to right
+  nav_1 is the left side of the leftmost button, nav_2 is shared by the
+  right side of the leftmost button and the left side of the second leftmost
+  button, etc
+  */
+  --nav_1: #df0000;
+  --nav_2: #ff8742;
+  --nav_3: #ffae00;
+  --nav_4: #88ff00;
+  --nav_5: #00ffd5;
+  --nav_6: #003cff;
+
+  --side_1: #df0000;
+  --side_2: #ff8742;
+  --side_3: #ffd900;
+  --side_4: #88ff00;
+  --side_5: #00ffd5;
+}
+
+body {
+  color: black;
+  font-family: Verdana;
+  background-color: white;
+  margin: 0px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+#header_img {
+  max-width: 100%;
+}
+
+.navbar {
+  margin: 5px;
+  text-decoration: none;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.navbar a {
+  text-decoration: none;
+  margin: 5px;
+  color: black;
+  float: left;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border: double 4px transparent;
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: padding-left 0.2s, padding-right 0.2s;
+}
+.navbar a:hover {
+  font-weight: bolder;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.navbar-right {
+  float: right;
+}
+
+#home_button {
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, var(--nav_1), var(--nav_2));
+}
+#blog_button {
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, var(--nav_2), var(--nav_3));
+}
+#fiction_button {
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, var(--nav_3), var(--nav_4));
+}
+#extra_button {
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, var(--nav_4), var(--nav_5));
+}
+#about_button {
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, var(--nav_5), var(--nav_6));
+}
+
+.headertext {
+  font-size: 48px;
+  font-weight: bold;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000000;
+}
+.blogtext {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1400px) {
+  .blogtext {
+    margin-right: 15%;
+    margin-left: 300px;
+  }
+  .headertext {
+    margin-right: 15%;
+    margin-left: 300px;
+  }
+}
+.sidenav {
+  width: 250px;
+  float: left;
+  top: 80px;
+  left: 12px;
+  padding-bottom: 10px;
+  position: sticky;
+  overflow-x: hidden;
+  text-align: left;
+  border: double 4px transparent;
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(white, white),
+    radial-gradient(
+      circle at top left,
+      var(--side_1),
+      var(--side_2),
+      var(--side_3),
+      var(--side_4),
+      var(--side_5)
+    );
+  transition: width 0.2s, padding-bottom 0.2s;
+}
+
+.sidenav:hover {
+  width: 260px;
+  padding-bottom: 20px;
+}
+.sidenav p {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  float: left;
+  text-align: left;
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.sidenav a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  float: left;
+  text-align: left;
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  font-weight: bolder;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  background-color: #d1d1d1;
+  padding: 10px 0px;
+  width: 100%;
+}

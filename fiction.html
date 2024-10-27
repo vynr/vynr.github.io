@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/transheart.ico" />
+    <title>Hi! This is my Website!</title>
+    <link
+      id="theme"
+      href="/default.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div id="headerbox" class="centered">
+      <div
+        id="lightmodeWrapper"
+        style="position: absolute; top: 12px; right: 12px; width: fit-content"
+      >
+        <!-- <button onclick="toggleLightMode()">hi</button> -->
+      </div>
+      <img
+        id="header_img"
+        src="images/thebanjodogg_whitetext.png"
+        width="700"
+      />
+    </div>
+    <div class="navbar" id="navbar">
+      <!--gradient borders now handled in style sheet!-->
+      <a id="home_button" href="index.html">Home</a>
+      <a id="blog_button" href="blog.html">Blog</a>
+      <a id="fiction_button" class="active">Fiction</a>
+      <!-- <a id="extra_button" class="has-tooltip" href="javascript:void(0)"
+        >Hi
+        <span class="tooltip">Tooltip text </span>
+      </a> -->
+      <div class="navbar-right">
+        <a id="about_button" href="about.html">About Me</a>
+      </div>
+    </div>
+    <!--buffer between top navigation and header/sidebar-->
+    <div style="height: 20px"></div>
+
+    <div id="sidenav" class="sidenav">
+      <p class="sidenav-header">LINKS</p>
+      <a href="https://www.royalroad.com/profile/476632">Royal Road </a>
+      <a href="https://archiveofourown.org/users/trapdoor_spider">AO3 </a>
+      <p class="sidenav-header">BETA CHAPTERS</p>
+      <button class="sidenav-button">Chapter 1</button>
+    </div>
+
+    <div id="blogwrapper" class="wrapper">
+      <div class="headertext">Fiction</div>
+      <div class="blogtext">soon???</div>
+    </div>
+
+    <script src="behavior.js"></script>
+  </body>
+</html>
